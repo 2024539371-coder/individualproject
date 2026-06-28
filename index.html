@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hajar's Personal Blog</title>
+
+<link rel="shortcut icon" type="image/jpg" href="duck.jpg"/>
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(
+    135deg,
+    #FFF0F5,
+    #FFD6E8,
+    #FFE4F2,
+    #FFF5FA
+    );
+    color:#555;
+}
+body{
+    animation: slideIn 0.5s ease;
+}
+
+body.slide-out{
+    animation: slideOut 1.0s ease forwards;
+}
+
+@keyframes slideIn{
+    from{
+        transform:translateX(100%);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes slideOut{
+    from{
+        transform:translateX(0);
+        opacity:1;
+    }
+    to{
+        transform:translateX(-100%);
+        opacity:0;
+    }
+}
+
+/* Navigation */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:rgba(255,255,255,0.85);
+    backdrop-filter:blur(10px);
+    padding:18px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+nav a{
+    text-decoration:none;
+    margin:0 15px;
+    color:#d63384;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ff69b4;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:90px 20px;
+    background:linear-gradient(135deg,#FFC8DD,#FFAFCC,#FFD6E8);
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.hero h1{
+    font-size:60px;
+    margin-top:20px;
+    color:white;
+}
+
+.hero p{
+    font-size:22px;
+    color:white;
+}
+
+.btn{
+    margin-top:25px;
+    padding:15px 35px;
+    background:white;
+    color:#d63384;
+    border:none;
+    border-radius:50px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.btn:hover{
+    background:#d63384;
+    color:white;
+}
+
+/* Cards */
+
+.card{
+    width:80%;
+    margin:50px auto;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h1{
+    color:#d63384;
+}
+
+.card p{
+    line-height:2;
+    text-align:justify;
+}
+
+/* Gallery */
+
+.gallery{
+    text-align:center;
+}
+
+.gallery img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    margin:10px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* Quote */
+
+.quote{
+    text-align:center;
+    font-size:28px;
+    font-style:italic;
+    color:#d63384;
+}
+
+/* Footer */
+
+footer{
+    background:#ffafcc;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+/* Back To Top */
+
+.top{
+    text-align:center;
+    margin:40px;
+}
+
+.top a{
+    color:#d63384;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Home -->
+<div class="hero" id="home">
+
+<img src="hajar1.jpeg" alt="Hajar">
+
+<h1>Hajar's Profile</h1>
+
+<p>Still growing, still learning, still discovering.</p>
+<button class="btn" onclick="goNext()">Click To Continue →</button>
+
+</div>
+
+<script>
+function goNext(){
+    document.body.classList.add("slide-out");
+
+    setTimeout(function(){
+        window.location.href = "about.html";
+    }, 600);
+}
+</script>
+</body>
+</html>
