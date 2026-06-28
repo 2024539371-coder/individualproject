@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hajar's Personal Blog</title>
+
+<link rel="shortcut icon" type="image/jpg" href="duck.jpg"/>
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(
+    135deg,
+    #FFF0F5,
+    #FFD6E8,
+    #FFE4F2,
+    #FFF5FA
+    );
+    color:#555;
+}
+
+/* Navigation */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:rgba(255,255,255,0.85);
+    backdrop-filter:blur(10px);
+    padding:18px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+nav a{
+    text-decoration:none;
+    margin:0 15px;
+    color:#d63384;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ff69b4;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:10px 10px;
+    background:linear-gradient(135deg,#FFC8DD,#FFAFCC,#FFD6E8);
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.hero h1{
+    font-size:60px;
+    margin-top:20px;
+    color:white;
+}
+
+.hero p{
+    font-size:22px;
+    color:white;
+}
+
+/* Cards */
+
+.card{
+    width:80%;
+    margin:50px auto;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h1{
+    color:#d63384;
+}
+
+.card p{
+    line-height:2;
+    text-align:justify;
+}
+
+/* Education */
+
+.edu-memory{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+    margin:10px;
+}
+
+/* Quote */
+
+.quote{
+    text-align:center;
+    font-size:28px;
+    font-style:italic;
+    color:#d63384;
+}
+
+/* Footer */
+
+footer{
+    background:#ffafcc;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+/* Back To Top */
+.back-to-top{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:55px;
+    height:55px;
+    background:#d63384;
+    color:white;
+    text-decoration:none;
+    font-size:28px;
+    font-weight:bold;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.back-to-top:hover{
+    background:#d63384;
+    transform:translateY(-5px);
+}
+
+
+</style>
+</head>
+
+<body id="top">
+
+<!-- Navigation -->
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="education3.html">Education</a>
+<a href="family2.html">Family</a>
+<a href="gallery.html">Gallery</a>
+</nav>
+
+<!-- Education -->
+<div class="card" id="primary">
+<img src="hualian1.jpg" style="height:150px; float:left; margin-right:50px; border-radius:20px;">
+
+<h1>🎓 SJK(C) HUA LIAN 1</h1>
+
+<p>
+Started primary school in 2012 until 2017.
+</p>
+
+</div>
+
+<div class="card" id="secondary">
+<img src="smjkhualian.jpg" style="height:150px; object-fit: contain; float:left; margin-right:50px; border-radius:20px;">
+
+<h1>🎓 SMJK HUA LIAN</h1>
+
+<p>
+Started secondary school in 2018 until 2022.
+</p>
+
+</div>
+
+<div class="card" id="university">
+<img src="uitm.jpg" style="height:225px; float:left; margin-right:30px; border-radius:20px;">
+
+<h1>🎓UITM REMBAU</h1>
+
+<p>
+Diploma of Information Science (Information Management)<br>
+Universiti Teknologi MARA (UiTM)
+</p>
+
+<p>
+My studies focus on information management, records management, archives, and digital information services.
+</p>
+
+</div>
+
+<a href="#top" class="back-to-top">🦆</a>
+
+</body>
+</html>
